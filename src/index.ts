@@ -7,6 +7,7 @@ const products = [{id: 1, title: "tomato"},{id: 2, title: "orange"}]
 const addresses = [{id: 1, value: "Nezalejnasti 12"},{id: 2, value: "Selickaga 11"}]
 app.use(bodyParser.json());
 
+console.log(" commit")
 app.get('/products', (req, res) => {
     if(req.query.title){
         let searchString = req.query.title.toString();
@@ -67,9 +68,9 @@ app.get('/addresses/:id', (req, res) => {
     }
     res.send(addresses)
 
-})
 
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`) })
 
+// вопрос про гетигнор (файлы вручную добавлял в коммит )
