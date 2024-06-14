@@ -60,14 +60,14 @@ app.get('/addresses', (req, res) => {
     res.send(addresses)
 })
 app.get('/addresses/:id', (req, res) => {
-    let address = addresses.find(p    => p.id === +req.params.id);
-    if(address){
+    let address = addresses.find(p => p.id === +req.params.id);
+    if (address) {
         res.send(address)
-    }else {
+    } else {
         res.sendStatus(404);
     }
     res.send(addresses)
-
+})
 console.log("я разобрался с коммитами")
 
 app.listen(port, () => {
