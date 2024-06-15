@@ -71,6 +71,7 @@ app.get('/addresses/:id', (req, res) => {
 console.log("я разобрался с коммитами")
 console.log("новый dev branch")
 console.log("commit 2")
+console.log("commit 3")
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`) })
