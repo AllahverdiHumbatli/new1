@@ -76,4 +76,5 @@ console.log("commit 3")
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`) })
 console.log("login")
+console.log("login2")
 // вопрос про гетигнор (файлы вручную добавлял в коммит )
